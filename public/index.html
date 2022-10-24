@@ -5,11 +5,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" type="text/css">
     <title>Time Microservice</title>
 </head>
 
 <body>
     <h1>Time Microservice</h1>
+    <h3>With this time microservice:</h3>
+    <ol>
+        <li>Pass a string as a parameter, and it will check to see whether that string contains either a Unix timestamp or a natural
+            language date (example: January 21, 2017).</li>
+        <li>If it contains either time format, it will return both the Unix timestamp and the natural language form of that date.</li>
+        <li>If it does not contain a date or Unix timestamp, it will return null for those properties.</li>
+    </ol>
+    <h3>Example Usage:</h3>
+    <code>https://https://unix-natural-date-service.onrender.com/api/January 21, 2017</code>
+    <br />
+    <code>https://unix-natural-date-service.onrender.com/api/January 21, 2017</code>
+    <h3>Example JSON output:</h3>
+    <code>{ "unix": 1484956800, "natural": "January 21, 2017" }</code>
 </body>
 
 </html>
